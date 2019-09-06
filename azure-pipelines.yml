@@ -13,15 +13,14 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-steps:
+
 - script: echo Hello, world!
   displayName: 'Run a one-line script 1'
 
-steps:
+
 - script: echo Hello, world!
   displayName: 'Run a one-line script 2'
 
-steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script 3'
 
