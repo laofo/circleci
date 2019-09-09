@@ -8,6 +8,7 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+  environment: 'xiaoming-dev'
 
 steps:
 - script: echo Hello, world!
