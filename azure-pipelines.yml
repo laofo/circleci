@@ -3,13 +3,6 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- master
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-
 #steps:
 #- script: echo Hello, world!
 #  displayName: 'Run a one-line script'
@@ -30,6 +23,13 @@ pool:
 #    echo See https://aka.ms/yaml
 #  displayName: 'Run a multi-line script'
 
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+
 - stage: deploy
   jobs:
   - deployment: DeployWeb
@@ -37,7 +37,7 @@ pool:
     pool:
       vmImage: 'Ubuntu-16.04'
     # creates an environment if it doesn't exist
-    environment: 'smarthotel-dev'
+    environment: 'xiaoming-dev'
     strategy:
       runOnce:
         deploy:
