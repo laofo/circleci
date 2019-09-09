@@ -29,17 +29,22 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
 
-- stage: deploy
-  jobs:
-  - deployment: DeployWeb
-    displayName: deploy Web App
-    pool:
-      vmImage: 'Ubuntu-16.04'
-    # creates an environment if it doesn't exist
-    environment: 'xiaoming-dev'
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-          - script: echo Hello world
+
+- script: echo Hello, world!
+  displayName: 'Run a one-line script 1'
+
+
+- script: echo Hello, world!
+  displayName: 'Run a one-line script 2'
+
+- script: echo Hello, world!
+  displayName: 'Run a one-line script 3'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
