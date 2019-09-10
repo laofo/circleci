@@ -3,4 +3,4 @@ script: echo hello
 install: echo install
 deploy:
   provider: script
-  script: echo deploy
+  script: echo deploy && asdfasdfasdf
